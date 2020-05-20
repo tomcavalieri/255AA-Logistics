@@ -1,0 +1,71 @@
+#data final
+data;
+
+set Cities:= Roma, Berlino, Amsterdam, Parigi, Bruxelles, Vienna;
+set Link:= (Roma,Berlino)
+		   (Roma,Parigi)			
+			(Roma,Vienna)			
+			(Berlino,Roma)			
+			(Berlino,Vienna)		
+			(Berlino,Amsterdam)	
+			(Parigi,Roma)			
+			(Parigi,Vienna)		
+			(Parigi,Bruxelles)		
+			(Parigi,Amsterdam)		
+			(Vienna,Roma)			
+			(Vienna,Berlino)		
+			(Vienna,Parigi)		
+			(Bruxelles,Parigi)		
+			(Bruxelles,Amsterdam)	
+			(Amsterdam,Parigi)		
+			(Amsterdam,Bruxelles);
+	
+
+param:				CostActivation:=
+Roma 				5
+Berlino				4
+Amsterdam			9
+Parigi				10
+Bruxelles 			7
+Vienna				8;
+
+param:				Profit:=
+Roma,Berlino		8
+Roma,Parigi			6
+Roma,Vienna			5
+Berlino,Roma		8
+Berlino,Vienna		5
+Berlino,Amsterdam	7
+Parigi,Roma			6
+Parigi,Vienna		3
+Parigi,Bruxelles	5
+Parigi,Amsterdam	2
+Vienna,Roma			6
+Vienna,Berlino		7
+Vienna,Parigi		6
+Bruxelles,Parigi	5
+Bruxelles,Amsterdam	5
+Amsterdam,Parigi	9
+Amsterdam,Bruxelles	5;
+
+param:				Limit:=
+Roma,Berlino		4
+Roma,Parigi			5
+Roma,Vienna			5
+Berlino,Roma		5
+Berlino,Vienna		5
+Berlino,Amsterdam	5
+Parigi,Roma			5
+Parigi,Vienna		5
+Parigi,Bruxelles	5
+Parigi,Amsterdam	5
+Vienna,Roma			5
+Vienna,Berlino		5
+Vienna,Parigi		5
+Bruxelles,Parigi	5
+Bruxelles,Amsterdam	5
+Amsterdam,Parigi	5
+Amsterdam,Bruxelles	5;
+
+
+
